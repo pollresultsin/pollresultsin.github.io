@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
+<style type="text/css">
+.bai{
+background-color: aliceblue;
+color: #A9A9A9;
+}
+.hei{background-color: black;
+color: darkgray;
+}
+</style>
 <meta charset="utf-8">
 <title>poll</title>
 </head>
@@ -8,5 +17,24 @@
 <h1 align="center">Hello!</h1>
 <p align="center">I am poll</p>
 <p align="center">For testing, to be continued</p>
+<body class="bai">
+<p id="kk">night</p>
+</body>
+<script type="text/javascript">
+var k= document.getElementById('kk');
+var b= document.querySelector('body');
+k.οnclick=function(){
+if(k.innerHTML=="night")
+{
+b.className='hei';
+k.innerHTML="daytime";
+}
+else
+{
+b.className='bai';
+k.innerHTML="night";
+}
+}
+</script>
 </body>
 </html>
