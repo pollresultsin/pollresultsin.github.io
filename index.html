@@ -1,15 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-<style type="text/css">
-.bai{
-background-color: aliceblue;
-color: #A9A9A9;
+<script>
+function changecolor(color){
+document.bgColor=color;
 }
-.hei{background-color: black;
-color: darkgray;
-}
-</style>
+</script>
 <meta charset="utf-8">
 <title>poll</title>
 </head>
@@ -17,24 +13,7 @@ color: darkgray;
 <h1 align="center">Hello!</h1>
 <p align="center">I am poll</p>
 <p align="center">For testing, to be continued</p>
-<body class="bai">
-<p id="kk">night</p>
-</body>
-<script type="text/javascript">
-var k= document.getElementById('kk');
-var b= document.querySelector('body');
-k.οnclick=function(){
-if(k.innerHTML=="night")
-{
-b.className='hei';
-k.innerHTML="daytime";
-}
-else
-{
-b.className='bai';
-k.innerHTML="night";
-}
-}
-</script>
+<input type="button" value="night" onClick="changecolor('black')">
+<input type="button" value="daytime" onClick="changecolor('white')">
 </body>
 </html>
