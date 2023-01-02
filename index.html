@@ -2,6 +2,12 @@
 <html>
 <head>
 <style>
+h1.1 {align="center" color: blue;}
+p.1 {align="center" color: green;}
+p.2 {align="center" color: blue;}
+div.1 {align="center"}
+div.2 {align="center"}
+div.3 {align="center"}
 </style>
 <script>
 function changecolor(color){
@@ -12,15 +18,15 @@ document.bgColor=color;
 <title>poll_results_in</title>
 </head>
 <body>
-<h1 align="center" style="color: blue;">Hello!</h1>
-<p align="center" style="color: green;">I am poll</p>
-<p align="center" style="color: green;">For testing, to be continued</p>
+<h1 class="1">Hello!</h1>
+<p class="1">I am poll</p>
+<p class="2>For testing, to be continued</p>
 <div align="center"><a href="one.html">
     <button>切换中文(Chinese)</button>
 </a></div>
-<div align="center"><input type="button" value="night" onClick="changecolor('black')"></div>
-<div align="center"><input type="button" value="daytime" onClick="changecolor('white')"></div>
+<div class="1"><input type="button" value="night" onClick="changecolor('black')"></div>
+<div class="2"><input type="button" value="daytime" onClick="changecolor('white')"></div>
 <br>
-<div align="center"><input type="button" value="return" onclick="window.location.href='#'"></div>
+<div class="3"><input type="button" value="return" onclick="window.location.href='#'"></div>
 </body>
 </html>
