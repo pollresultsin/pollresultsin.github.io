@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html>
+ <body>
+<html>
+ <head>
+  <body bgcolor="white">
+  <script>
+  alert("Note that this is just a test web")
+  </script>
+ <link rel="stylesheet" type="text/css" href="paipaide2.css"/> 
+<body>
+ <head>
+   <style>
+      h1 { color: red; }
+      a { color: Black; }
+      h3 { color: #999998; }
+      h2 { color: #000999; }
+
+   </style>
+    <h1 id="login">
+  </head>
+  <body>
+<html>
+   <body>
+   </style>
+<html>
+  <h3 align="center">Get up</h3>
+  <h2 align="center">Get up</h2>
+  <h1 align="center">Get up</h1>
+<table border="1">
+</table>
+  <div style="border: solid black;background:"> 
+   It's boring, right
+  </div>
+  <div style="border: solid black;background:"> 
+  Boring?
+  </div>
+  <br><input type="submit" onclick="alert('Okay, I see.')" value="Boring" style="background:black;color:red" /></br>
+  <br><input type="submit" onclick="alert('Then you are most likely my friend.')" value="not Boring" style="background:black;color:red" /></br>
+  <br><a href="about:blank"target="_blank">Blank page</a></br>
+  <img src="wuxiao.bmp">
+  <p>What is it</p>
+  <br><input type="submit" onclick="alert('mistake')" value="A stone wall" style="background:black;color:red" /></br>
+  <br><input type="submit" onclick="alert('mistake')" value="B Iron walls" style="background:black;color:red" /></br>
+  <br><input type="submit" onclick="alert('right')" value="C Cement walls" style="background:black;color:red" /></br>
+  <details>
+</ul type="square">
+  <summary>square</summary>
+  <summary>A stone wall</summary>
+  <p>mistake</p>
+  <summary>B Iron walls</summary>
+  <p>mistake</p>
+  <summary>C Cement walls</summary>
+  <p>That's right</p>
+  </details>
+<script language="JavaScript">
+			function startTime()   
+			{   
+				var today=new Date();//定义日期对象   
+				var yyyy = today.getFullYear();//通过日期对象的getFullYear()方法返回年    
+				var MM = today.getMonth()+1;//通过日期对象的getMonth()方法返回年    
+				var dd = today.getDate();//通过日期对象的getDate()方法返回年     
+				var hh=today.getHours();//通过日期对象的getHours方法返回小时   
+				var mm=today.getMinutes();//通过日期对象的getMinutes方法返回分钟   
+				var ss=today.getSeconds();//通过日期对象的getSeconds方法返回秒   
+				// 如果分钟或小时的值小于10，则在其值前加0，比如如果时间是下午3点20分9秒的话，则显示15：20：09   
+				MM=checkTime(MM);
+				dd=checkTime(dd);
+				mm=checkTime(mm);   
+				ss=checkTime(ss);    
+				var day; //用于保存星期（getDay()方法得到星期编号）
+				if(today.getDay()==0)   day   =   "Sun. " 
+				if(today.getDay()==1)   day   =   "Mon. " 
+				if(today.getDay()==2)   day   =   "Tue. " 
+				if(today.getDay()==3)   day   =   "Wed. " 
+				if(today.getDay()==4)   day   =   "Thu. " 
+				if(today.getDay()==5)   day   =   "Fri. " 
+				if(today.getDay()==6)   day   =   "Sat. " 
+				document.getElementById('nowDateTimeSpan').innerHTML=yyyy+"-"+MM +"-"+ dd +" " + hh+":"+mm+":"+ss+"   " + day;   
+				setTimeout('startTime()',1000);//每一秒中重新加载startTime()方法 
+			}   
+			
+			function checkTime(i)   
+			{   
+				if (i<10){
+					i="0" + i;
+				}   
+				  return i;
+			}  
+		</script>
+	</head>
+	<body onload="startTime()">
+		Current time:<font color="#33FFFF"><span id="nowDateTimeSpan"></span></font>	
+	</body>
+</html>
+</script>
+                                              <br><p align=center>Friday, January 15, 2021 Clear</p></br>                                    
+    <p><br>&nbsp&nbsp&nbsp&nbsp Today, I'm so happy, because...</br></p>
+    <img src="湃湃7辅助.png">
+  ……</br></p>
+<embed src="paipai6.5.gif" width="275px " height="275px "></embed>
+                                    <p align=center><br>Sunday, January 17, 2021 Clear</br></p>
+<p>&nbsp&nbsp&nbsp&nbsp I'm here again, see? I made a triangular arrow, click it will show the answer, there is also a one below. (I'm too lazy, I'll be writing later)</p>
+  <details>
+  <summary>I don't know what to write</summary>
+  <summary>......</summary>
+  <p>January 15, 2021</p>
+  </details>
+<summary>
+<script>
+	
+var myGamePiece;
+ 
+function startGame() {
+    myGamePiece = new component(50, 30, "red", 225, 225);
+    myGameArea.start();
+}
+ 
+var myGameArea = {
+    canvas : document.createElement("canvas"),
+    start : function() {
+        this.canvas.width = 500;
+        this.canvas.height = 500;
+        this.context = this.canvas.getContext("2d");
+        document.body.insertBefore(this.canvas, document.body.childNodes[0]);
+        this.frameNo = 0;
+        this.interval = setInterval(updateGameArea, 0.1);
+        window.addEventListener('keydown', function (e) {
+            e.preventDefault();
+            myGameArea.keys = (myGameArea.keys || []);
+            myGameArea.keys[e.keyCode] = (e.type == "keydown");
+        })
+        window.addEventListener('keyup', function (e) {
+            myGameArea.keys[e.keyCode] = (e.type == "keydown");            
+        })
+    },
+    stop : function() {
+        clearInterval(this.interval);
+    },    
+    clear : function() {
+        this.context.clearRect(0, 0, this.canvas.width, this.canvas.height);
+    }
+}
+ 
+function component(width, height, color, x, y, type) {
+ 
+    this.type = type;
+    this.width = width;
+    this.height = height;
+    this.speed = 1;
+    this.angle = 200;
+    this.moveAngle = 1;
+    this.x = x;
+    this.y = y;    
+    this.update = function() {
+        ctx = myGameArea.context;
+        ctx.save();
+        ctx.translate(this.x, this.y);
+        ctx.rotate(this.angle);
+        ctx.fillStyle = color;
+        ctx.fillRect(this.width / -2, this.height / -2, this.width, this.height);        
+        ctx.restore();    
+    }
+    this.newPos = function() {
+        this.angle += this.moveAngle * Math.PI / 180;
+        this.x += this.speed * Math.sin(this.angle);
+        this.y -= this.speed * Math.cos(this.angle);
+    }
+}
+ 
+function updateGameArea() {
+    myGameArea.clear();
+    myGamePiece.moveAngle = 0;
+    myGamePiece.speed = 0;
+    if (myGameArea.keys && myGameArea.keys[37]) {myGamePiece.moveAngle = -1; }
+    if (myGameArea.keys && myGameArea.keys[39]) {myGamePiece.moveAngle = 1; }
+    if (myGameArea.keys && myGameArea.keys[38]) {myGamePiece.speed= 1; }
+    if (myGameArea.keys && myGameArea.keys[40]) {myGamePiece.speed= -1; }
+    myGamePiece.newPos();
+    myGamePiece.update();
+}
+ 
+</script>
+</summary>
+  </details>
+<meta name="author" content="233"/>
+<meta name="keywords" content="2048"/>
+<meta http-equiv="content-Type" content="text/html;charset=gb2312"/>
+<html>
+<head>
+<style>
+.up,.down,.left,.right{
+font-size:30px;
+
+
+}
+canvas{
+border-style:solid;
+float:left;
+}
+.right{float:left;
+margin-top:80px;
+margin-left:400px;
+height:100px;
+width:50px;
+}
+.down,.up{
+
+margin-left:550px;
+}
+.left{
+margin-top:80px;
+margin-bottom:100px;
+
+}
+
+</style>
+</head>
+
+
+<body>
+<h1 align=center>poll's 2048</h1>
+<div class="down" onclick="down()">Up</div>
+<div class="right" onclick="right()">left</div>
+<canvas id="drawing" height=200px width=200px ></canvas>
+<div class="left" onclick="left()">right</div>
+<div class="up" onclick="up()">down</div>
+<script>
+var tArray=new Array();
+for(var i=0;i<4;i++){
+tArray[i]=new Array();
+for(var t=0;t<4;t++){
+tArray[i][t]="";
+}
+}
+var locx;var locy;
+function produce(){
+locx=Math.ceil(Math.random()*4-1);
+locy=Math.ceil(Math.random()*4-1);
+if(locx==-1||locy==-1||tArray[locx][locy]!=""){
+produce();
+}
+}
+produce();
+tArray[locx][locy]=2;
+produce();
+tArray[locx][locy]=4;
+var drawing=document.getElementById("drawing");
+if(drawing.getContext){
+var context=drawing.getContext("2d");
+context.beginPath();
+context.lineWidth=0.25;
+for(var t2=0;t2<3;t2++){
+context.moveTo(50+t2*50,0);
+context.lineTo(50+t2*50,200);
+}
+for(var i2=0;i2<3;i2++){
+context.moveTo(0,50+i2*50);
+context.lineTo(200,50+i2*50);
+}
+
+context.stroke();
+
+
+
+}
+
+function display(){
+for(var t1=0;t1<4;t1++){
+for(var i1=0;i1<4;i1++){
+context.clearRect(50*t1,50*i1,50,50);
+context.strokeRect(50*t1,50*i1,50,50);
+context.fillText(tArray[t1][i1],20+50*t1,30+50*i1);
+}
+}
+
+}
+display();
+var zeno=0;
+function down(){
+
+for(var t3=0;t3<4;t3++){
+for(var i3=0;i3<4;i3++){
+if(tArray[t3][i3]==""){
+zeno++;
+}
+else if((zeno!=0)&&(i3>zeno)&&(tArray[t3][i3-1-zeno]==tArray[t3][i3])){
+tArray[t3][i3-1-zeno]=tArray[t3][i3-1-zeno]+tArray[t3][i3];
+tArray[t3][i3]="";
+zeno++;
+}
+else{
+
+if(tArray[t3][i3+1]==tArray[t3][i3]){
+tArray[t3][i3]=tArray[t3][i3]+tArray[t3][i3+1];
+tArray[t3][i3+1]="";
+
+}
+
+
+if(zeno!=0){
+tArray[t3][i3-zeno]=tArray[t3][i3];
+tArray[t3][i3]="";
+}
+
+
+}
+
+
+
+
+
+}
+
+
+zeno=0;
+}
+output();
+display();
+zeno=0;
+}
+
+function up(){
+for(var t3=0;t3<4;t3++){
+for(var i3=3;i3>=0;i3--){
+if(tArray[t3][i3]==""){
+zeno++;
+}
+else if((zeno!=0)&&(tArray[t3][i3+1+zeno]==tArray[t3][i3])){
+tArray[t3][i3+1+zeno]=tArray[t3][i3+1+zeno]+tArray[t3][i3];
+tArray[t3][i3]="";
+zeno++;
+}
+else{
+
+if(i3>0&&tArray[t3][i3-1]==tArray[t3][i3]){
+tArray[t3][i3]=tArray[t3][i3]+tArray[t3][i3-1];
+tArray[t3][i3-1]="";
+
+}
+
+
+if(zeno!=0){
+tArray[t3][i3+zeno]=tArray[t3][i3];
+tArray[t3][i3]="";
+}
+
+
+}
+
+
+
+
+
+}
+
+
+zeno=0;
+}
+output();
+display();
+zeno=0;
+}
+
+function right(){
+for(var i3=0;i3<4;i3++){
+for(var t3=0;t3<4;t3++){
+if(tArray[t3][i3]==""){
+zeno++;
+}
+else if((zeno!=0)&&(t3>zeno)&&(tArray[t3-1-zeno][i3]==tArray[t3][i3])){
+tArray[t3-1-zeno][i3]=tArray[t3-1-zeno][i3]+tArray[t3][i3];
+tArray[t3][i3]="";
+zeno++;
+}
+else{
+
+if(t3<3&&tArray[t3+1][i3]==tArray[t3][i3]){
+tArray[t3][i3]=tArray[t3][i3]+tArray[t3+1][i3];
+tArray[t3+1][i3]="";
+
+}
+
+
+if(zeno!=0){
+tArray[t3-zeno][i3]=tArray[t3][i3];
+tArray[t3][i3]="";
+}
+
+
+}
+
+
+
+
+
+}
+
+
+zeno=0;
+}
+output();
+display();
+zeno=0;
+}
+
+function left(){
+for(var i3=0;i3<4;i3++){
+for(var t3=3;t3>=0;t3--){
+if(tArray[t3][i3]==""){
+zeno++;
+}
+else if((zeno!=0)&&(t3+1+zeno<4)&&(tArray[t3+1+zeno][i3]==tArray[t3][i3])){
+tArray[t3+1+zeno][i3]=tArray[t3+1+zeno][i3]+tArray[t3][i3];
+tArray[t3][i3]="";
+zeno++;
+}
+else{
+
+if(t3>0&&tArray[t3-1][i3]==tArray[t3][i3]){
+tArray[t3][i3]=tArray[t3][i3]+tArray[t3-1][i3];
+tArray[t3-1][i3]="";
+
+}
+
+
+if(zeno!=0){
+tArray[t3+zeno][i3]=tArray[t3][i3];
+tArray[t3][i3]="";
+}
+
+
+}
+
+
+
+
+
+}
+
+
+zeno=0;
+}
+output();
+display();
+zeno=0;
+
+}
+function output(){
+produce();
+if(Math.random()>0.5)
+tArray[locx][locy]=4;
+else
+tArray[locx][locy]=2;
+}
+
+</script>
+</body>
+
+</html> 
+<br><p><canvas id="myCanvas" width="200" height="100" style="border:1px solid #000000;"></p></br>
+<br><p></canvas></br></p>
+<br><p align=center>Friday, January 30, 2021 Clear</p></br>
+<p>&nbsp&nbsp&nbsp&nbsp Look, I made a box and a movable square in a moment.</p>
+
+<p>&nbsp&nbsp&nbsp&nbsp Look, it's up to move</p>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+canvas {
+    border:1px solid #d3d3d3;
+    background-color: #f1f1f1;
+}
+</style>
+
+<br><p align=center>Sunday, October 24, 2021 Clear</p></br>
+<p>&nbsp&nbsp&nbsp&nbsp You ask me why I haven't done it for so long, because I won't.</p>
+<p>&nbsp&nbsp&nbsp&nbsp Maybe I won't be writing in the future...</p>
+
+<br><p align=center>Thursday, November 11, 2021 Clear<</p></br>
+<p>&nbsp&nbsp&nbsp&nbsp A long time passed again... My family got me a new computer and saved the D drive file, or I wouldn't have it. By the way, I flipped through my previous code again and found that there was a GIF, and as soon as I looked at his name, it awakened my memory, and I corrected him and put it below, which is this, gif file.</p>
+<br><embed src="wuxiao.gif" width="600px " height="350px "></embed></br>
+
+<br><p align=center>Friday, July 15, 2022 Clear</p></br>
+<p>&nbsp&nbsp&nbsp&nbsp It was another sunny day, for most of the year, and the computer was repaired 3 times.</p>
+<br><a href = ""</br>
+<div align="center"><a href="old2.html">
+    <button>切换中文(chinese)</button>
+</a></div>
+<div align="center"><a href="index.html">
+    <button>Return to the new version</button>
+<br><a href = ""</br>
+<br><input type="button" value="Back to top" style="background:blue;color:#FFFFFF" /></br>
+</a>
+ </body>
+</html>

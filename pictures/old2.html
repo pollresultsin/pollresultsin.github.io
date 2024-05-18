@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html>
+	<body>
+		<html>
+			<head>
+			<body bgcolor="white">
+				<script>
+					alert("注意，这只是测试web")
+  </script>
+				<link rel="stylesheet" type="text/css" href="paipaide2.css" />
+				<body>
+					<head>
+						<style>
+							h1 { color: red; }
+      a { color: Black; }
+      h3 { color: #999998; }
+      h2 { color: #000999; }
+
+   </style>
+						<h1 id="login">
+					</head>
+					<body>
+						<html>
+							<body>
+								</style>
+								<html>
+									<h3 align="center">起来</h3>
+									<h2 align="center">起来</h2>
+									<h1 align="center">起来</h1>
+									<table border="1">
+									</table>
+									<div style="border: solid black;background:">
+										很无聊，对吧
+									</div>
+									<div style="border: solid black;background:">
+										很无聊？
+									</div>
+									<br>
+									<input type="submit" onclick="alert('好的，我知道了。')" value="无聊" style="background:black;color:red" />
+									</br>
+									<br>
+									<input type="submit" onclick="alert('那你极大可能是我的朋友。')" value="不无聊" style="background:black;color:red" />
+									</br>
+									<br>
+									<a href="about:blank" target="_blank">空白页</a>
+									</br>
+									<br>
+									<img src="湃湃7辅助.bmp">
+									<p>这是什么</p>
+									<br>
+									<input type="submit" onclick="alert('错误')" value="A 石墙" style="background:black;color:red" />
+									</br>
+									<br>
+									<input type="submit" onclick="alert('错误')" value="B 铁墙" style="background:black;color:red" />
+									</br>
+									<br>
+									<input type="submit" onclick="alert('正确')" value="C 水泥墙" style="background:black;color:red" />
+									</br>
+									<details>
+										</ul type="square">
+										<summary>答案</summary>
+										<summary>A 石墙</summary>
+										<p>错误</p>
+										<summary>B 铁墙</summary>
+										<p>错误</p>
+										<summary>C 水泥墙</summary>
+										<p>正确</p>
+									</details>
+									<script language="JavaScript">
+										function startTime()   
+			{   
+				var today=new Date();//定义日期对象   
+				var yyyy = today.getFullYear();//通过日期对象的getFullYear()方法返回年    
+				var MM = today.getMonth()+1;//通过日期对象的getMonth()方法返回年    
+				var dd = today.getDate();//通过日期对象的getDate()方法返回年     
+				var hh=today.getHours();//通过日期对象的getHours方法返回小时   
+				var mm=today.getMinutes();//通过日期对象的getMinutes方法返回分钟   
+				var ss=today.getSeconds();//通过日期对象的getSeconds方法返回秒   
+				// 如果分钟或小时的值小于10，则在其值前加0，比如如果时间是下午3点20分9秒的话，则显示15：20：09   
+				MM=checkTime(MM);
+				dd=checkTime(dd);
+				mm=checkTime(mm);   
+				ss=checkTime(ss);    
+				var day; //用于保存星期（getDay()方法得到星期编号）
+				if(today.getDay()==0)   day   =   "星期日 " 
+				if(today.getDay()==1)   day   =   "星期一 " 
+				if(today.getDay()==2)   day   =   "星期二 " 
+				if(today.getDay()==3)   day   =   "星期三 " 
+				if(today.getDay()==4)   day   =   "星期四 " 
+				if(today.getDay()==5)   day   =   "星期五 " 
+				if(today.getDay()==6)   day   =   "星期六 " 
+				document.getElementById('nowDateTimeSpan').innerHTML=yyyy+"-"+MM +"-"+ dd +" " + hh+":"+mm+":"+ss+"   " + day;   
+				setTimeout('startTime()',1000);//每一秒中重新加载startTime()方法 
+			}   
+			
+			function checkTime(i)   
+			{   
+				if (i<10){
+					i="0" + i;
+				}   
+				  return i;
+			}  
+		</script>
+									</head>
+									<body onload="startTime()">
+										当前时间：<font color="#33FFFF">
+											<span id="nowDateTimeSpan"></span>
+										</font>
+									</body>
+								</html>
+								</script>
+								<br>
+								<p align=center>2021年 1月 15日 星期五 晴</p>
+								</br>
+								<p>
+									<br>&nbsp&nbsp&nbsp&nbsp今天，我太开心了，因为</br>
+								</p>
+								<img src="湃湃7辅助.png">
+								所以……</br>
+								</p>
+								<embed src="paipai6.5.gif" width="275px " height="275px ">
+								</embed>
+								<p align=center>
+									<br>2021年 1月 17日 星期日 晴</br>
+								</p>
+								<br>
+								<p>&nbsp&nbsp&nbsp&nbsp我又来了，看到了么？我做了一个三角箭头，点它会显示答案，下面也有一个.（我太懒了,日后在写)
+									<video>
+										<video poster"" width="100%" controls>
+											<source src="paipai6.5.mp4" type"mp4">
+										</video>
+										<details>
+											<summary>我不知道写啥</summary>
+											<summary>所以</summary>
+											<p>2021年1月15日</p>
+											<summary>
+												<script>
+
+													var myGamePiece;
+ 
+function startGame() {
+    myGamePiece = new component(50, 30, "red", 225, 225);
+    myGameArea.start();
+}
+ 
+var myGameArea = {
+    canvas : document.createElement("canvas"),
+    start : function() {
+        this.canvas.width = 500;
+        this.canvas.height = 500;
+        this.context = this.canvas.getContext("2d");
+        document.body.insertBefore(this.canvas, document.body.childNodes[0]);
+        this.frameNo = 0;
+        this.interval = setInterval(updateGameArea, 0.1);
+        window.addEventListener('keydown', function (e) {
+            e.preventDefault();
+            myGameArea.keys = (myGameArea.keys || []);
+            myGameArea.keys[e.keyCode] = (e.type == "keydown");
+        })
+        window.addEventListener('keyup', function (e) {
+            myGameArea.keys[e.keyCode] = (e.type == "keydown");            
+        })
+    },
+    stop : function() {
+        clearInterval(this.interval);
+    },    
+    clear : function() {
+        this.context.clearRect(0, 0, this.canvas.width, this.canvas.height);
+    }
+}
+ 
+function component(width, height, color, x, y, type) {
+ 
+    this.type = type;
+    this.width = width;
+    this.height = height;
+    this.speed = 1;
+    this.angle = 200;
+    this.moveAngle = 1;
+    this.x = x;
+    this.y = y;    
+    this.update = function() {
+        ctx = myGameArea.context;
+        ctx.save();
+        ctx.translate(this.x, this.y);
+        ctx.rotate(this.angle);
+        ctx.fillStyle = color;
+        ctx.fillRect(this.width / -2, this.height / -2, this.width, this.height);        
+        ctx.restore();    
+    }
+    this.newPos = function() {
+        this.angle += this.moveAngle * Math.PI / 180;
+        this.x += this.speed * Math.sin(this.angle);
+        this.y -= this.speed * Math.cos(this.angle);
+    }
+}
+ 
+function updateGameArea() {
+    myGameArea.clear();
+    myGamePiece.moveAngle = 0;
+    myGamePiece.speed = 0;
+    if (myGameArea.keys && myGameArea.keys[37]) {myGamePiece.moveAngle = -1; }
+    if (myGameArea.keys && myGameArea.keys[39]) {myGamePiece.moveAngle = 1; }
+    if (myGameArea.keys && myGameArea.keys[38]) {myGamePiece.speed= 1; }
+    if (myGameArea.keys && myGameArea.keys[40]) {myGamePiece.speed= -1; }
+    myGamePiece.newPos();
+    myGamePiece.update();
+}
+ 
+</script>
+											</summary>
+										</details>
+										<meta name="author" content="233" />
+										<meta name="keywords" content="2048" />
+										<meta http-equiv="content-Type" content="text/html;charset=gb2312" />
+										<html>
+											<head>
+												<style>
+													.up,.down,.left,.right{
+font-size:30px;
+
+
+}
+canvas{
+border-style:solid;
+float:left;
+}
+.right{float:left;
+margin-top:80px;
+margin-left:400px;
+height:100px;
+width:50px;
+}
+.down,.up{
+
+margin-left:550px;
+}
+.left{
+margin-top:80px;
+margin-bottom:100px;
+
+}
+
+</style>
+											</head>
+
+
+											<body>
+												<h1 align=center>poll的2048</h1>
+												<div class="down" onclick="down()">上</div>
+												<div class="right" onclick="right()">左</div>
+												<canvas id="drawing" height=200px width=200px></canvas>
+												<div class="left" onclick="left()">右</div>
+												<div class="up" onclick="up()">下</div>
+												<script>
+													var tArray=new Array();
+for(var i=0;i<4;i++){
+tArray[i]=new Array();
+for(var t=0;t<4;t++){
+tArray[i][t]="";
+}
+}
+var locx;var locy;
+function produce(){
+locx=Math.ceil(Math.random()*4-1);
+locy=Math.ceil(Math.random()*4-1);
+if(locx==-1||locy==-1||tArray[locx][locy]!=""){
+produce();
+}
+}
+produce();
+tArray[locx][locy]=2;
+produce();
+tArray[locx][locy]=4;
+var drawing=document.getElementById("drawing");
+if(drawing.getContext){
+var context=drawing.getContext("2d");
+context.beginPath();
+context.lineWidth=0.25;
+for(var t2=0;t2<3;t2++){
+context.moveTo(50+t2*50,0);
+context.lineTo(50+t2*50,200);
+}
+for(var i2=0;i2<3;i2++){
+context.moveTo(0,50+i2*50);
+context.lineTo(200,50+i2*50);
+}
+
+context.stroke();
+
+
+
+}
+
+function display(){
+for(var t1=0;t1<4;t1++){
+for(var i1=0;i1<4;i1++){
+context.clearRect(50*t1,50*i1,50,50);
+context.strokeRect(50*t1,50*i1,50,50);
+context.fillText(tArray[t1][i1],20+50*t1,30+50*i1);
+}
+}
+
+}
+display();
+var zeno=0;
+function down(){
+
+for(var t3=0;t3<4;t3++){
+for(var i3=0;i3<4;i3++){
+if(tArray[t3][i3]==""){
+zeno++;
+}
+else if((zeno!=0)&&(i3>zeno)&&(tArray[t3][i3-1-zeno]==tArray[t3][i3])){
+tArray[t3][i3-1-zeno]=tArray[t3][i3-1-zeno]+tArray[t3][i3];
+tArray[t3][i3]="";
+zeno++;
+}
+else{
+
+if(tArray[t3][i3+1]==tArray[t3][i3]){
+tArray[t3][i3]=tArray[t3][i3]+tArray[t3][i3+1];
+tArray[t3][i3+1]="";
+
+}
+
+
+if(zeno!=0){
+tArray[t3][i3-zeno]=tArray[t3][i3];
+tArray[t3][i3]="";
+}
+
+
+}
+
+
+
+
+
+}
+
+
+zeno=0;
+}
+output();
+display();
+zeno=0;
+}
+
+function up(){
+for(var t3=0;t3<4;t3++){
+for(var i3=3;i3>=0;i3--){
+if(tArray[t3][i3]==""){
+zeno++;
+}
+else if((zeno!=0)&&(tArray[t3][i3+1+zeno]==tArray[t3][i3])){
+tArray[t3][i3+1+zeno]=tArray[t3][i3+1+zeno]+tArray[t3][i3];
+tArray[t3][i3]="";
+zeno++;
+}
+else{
+
+if(i3>0&&tArray[t3][i3-1]==tArray[t3][i3]){
+tArray[t3][i3]=tArray[t3][i3]+tArray[t3][i3-1];
+tArray[t3][i3-1]="";
+
+}
+
+
+if(zeno!=0){
+tArray[t3][i3+zeno]=tArray[t3][i3];
+tArray[t3][i3]="";
+}
+
+
+}
+
+
+
+
+
+}
+
+
+zeno=0;
+}
+output();
+display();
+zeno=0;
+}
+
+function right(){
+for(var i3=0;i3<4;i3++){
+for(var t3=0;t3<4;t3++){
+if(tArray[t3][i3]==""){
+zeno++;
+}
+else if((zeno!=0)&&(t3>zeno)&&(tArray[t3-1-zeno][i3]==tArray[t3][i3])){
+tArray[t3-1-zeno][i3]=tArray[t3-1-zeno][i3]+tArray[t3][i3];
+tArray[t3][i3]="";
+zeno++;
+}
+else{
+
+if(t3<3&&tArray[t3+1][i3]==tArray[t3][i3]){
+tArray[t3][i3]=tArray[t3][i3]+tArray[t3+1][i3];
+tArray[t3+1][i3]="";
+
+}
+
+
+if(zeno!=0){
+tArray[t3-zeno][i3]=tArray[t3][i3];
+tArray[t3][i3]="";
+}
+
+
+}
+
+
+
+
+
+}
+
+
+zeno=0;
+}
+output();
+display();
+zeno=0;
+}
+
+function left(){
+for(var i3=0;i3<4;i3++){
+for(var t3=3;t3>=0;t3--){
+if(tArray[t3][i3]==""){
+zeno++;
+}
+else if((zeno!=0)&&(t3+1+zeno<4)&&(tArray[t3+1+zeno][i3]==tArray[t3][i3])){
+tArray[t3+1+zeno][i3]=tArray[t3+1+zeno][i3]+tArray[t3][i3];
+tArray[t3][i3]="";
+zeno++;
+}
+else{
+
+if(t3>0&&tArray[t3-1][i3]==tArray[t3][i3]){
+tArray[t3][i3]=tArray[t3][i3]+tArray[t3-1][i3];
+tArray[t3-1][i3]="";
+
+}
+
+
+if(zeno!=0){
+tArray[t3+zeno][i3]=tArray[t3][i3];
+tArray[t3][i3]="";
+}
+
+
+}
+
+
+
+
+
+}
+
+
+zeno=0;
+}
+output();
+display();
+zeno=0;
+
+}
+function output(){
+produce();
+if(Math.random()>0.5)
+tArray[locx][locy]=4;
+else
+tArray[locx][locy]=2;
+}
+
+</script>
+											</body>
+
+										</html>
+										<br>
+										<p>
+											<canvas id="myCanvas" width="200" height="100" style="border:1px solid #000000;">
+										</p>
+										</br>
+										<br>
+										<p>
+											</canvas>
+											</br>
+										</p>
+										<br>
+										<p align=center>2021年 1月 30日 星期五 晴</p>
+										</br>
+										<p>&nbsp&nbsp&nbsp&nbsp看，我做了一个方框，一会儿做一个可移动的正方形。</p>
+
+										<p>&nbsp&nbsp&nbsp&nbsp看，上面就可以移动了</p>
+										<meta name="viewport" content="width=device-width, initial-scale=1.0">
+										<style>
+											canvas {
+    border:1px solid #d3d3d3;
+    background-color: #f1f1f1;
+}
+</style>
+
+										<br>
+										<p align=center>2021年 10月 24日 星期日 晴</p>
+										</br>
+										<p>&nbsp&nbsp&nbsp&nbsp你问我为什么这么久都没做，因为我不会了。</p>
+										<p>&nbsp&nbsp&nbsp&nbsp或许这就是最后一代了……</p>
+
+										<br>
+										<p align=center>2021年 11月 11日 星期四 晴</p>
+										</br>
+										<p>&nbsp&nbsp&nbsp&nbsp时间又过去了很久……我家人给我换了台新电脑，把D盘文件保存了，要不我就没这个了。对了，我又翻了翻我前面的代码，发现有个动图，一看他的名字，它就唤醒了我的记忆，我把他修正了一下，放到了下面，就是这个，gif文件。</p>
+										<br>
+										<embed src="湃湃7辅助.gif" width="600px " height="350px ">
+										</embed>
+										</br>
+
+										<br>
+										<p align=center>2022年 7月 15日 星期五 晴</p>
+										</br>
+										<p>&nbsp&nbsp&nbsp&nbsp又是晴朗的一天，大半年了，电脑也修了3次了。</p>
+										<br>
+										<a href="" </br>
+										   <br>
+											<div align="center"><a href="poll-old.html">
+    												<button>Switch to English(切换英文)</button>
+											</a></div>
+											<div align="center"><a href="two.html">
+    												<button>返回新版</button>
+<br><a href = ""</br>
+<br><input type="button" value="点我快速返回" style="background:blue;color:#FFFFFF" /></br>
+</a>
+
+							</body>
+						</html>
